@@ -449,10 +449,9 @@ namespace Ekona.Images
             // checkCrop
             // 
             this.checkCrop.AutoSize = true;
-            this.checkCrop.Location = new System.Drawing.Point(469, 545);
-            this.checkCrop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkCrop.Location = new System.Drawing.Point(352, 409);
             this.checkCrop.Name = "checkCrop";
-            this.checkCrop.Size = new System.Drawing.Size(56, 21);
+            this.checkCrop.Size = new System.Drawing.Size(42, 16);
             this.checkCrop.TabIndex = 7;
             this.checkCrop.Text = "S1A";
             this.checkCrop.UseVisualStyleBackColor = true;
