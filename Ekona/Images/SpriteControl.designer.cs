@@ -84,7 +84,7 @@ namespace Ekona.Images
             this.label4 = new System.Windows.Forms.Label();
             this.checkListOAM = new System.Windows.Forms.CheckedListBox();
             this.label5 = new System.Windows.Forms.Label();
-			this.checkCrop = new System.Windows.Forms.CheckBox();
+            this.checkCrop = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numThreshold)).BeginInit();
@@ -433,7 +433,7 @@ namespace Ekona.Images
             "OAM 5"});
             this.checkListOAM.Location = new System.Drawing.Point(432, 402);
             this.checkListOAM.Name = "checkListOAM";
-            this.checkListOAM.Size = new System.Drawing.Size(78, 109);
+            this.checkListOAM.Size = new System.Drawing.Size(78, 94);
             this.checkListOAM.TabIndex = 49;
             this.checkListOAM.SelectedIndexChanged += new System.EventHandler(this.check_CheckedChanged);
             // 
@@ -444,14 +444,14 @@ namespace Ekona.Images
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 26);
             this.label5.TabIndex = 50;
-            this.label5.Text = "Check the OAMs\r\nto work with.";			
+            this.label5.Text = "Check the OAMs\r\nto work with.";
             // 
             // checkCrop
             // 
             this.checkCrop.AutoSize = true;
-            this.checkCrop.Location = new System.Drawing.Point(352, 409);
+            this.checkCrop.Location = new System.Drawing.Point(352, 443);
             this.checkCrop.Name = "checkCrop";
-            this.checkCrop.Size = new System.Drawing.Size(42, 16);
+            this.checkCrop.Size = new System.Drawing.Size(46, 17);
             this.checkCrop.TabIndex = 7;
             this.checkCrop.Text = "S1A";
             this.checkCrop.UseVisualStyleBackColor = true;
