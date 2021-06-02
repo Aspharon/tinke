@@ -84,6 +84,7 @@ namespace Ekona.Images
             this.label4 = new System.Windows.Forms.Label();
             this.checkListOAM = new System.Windows.Forms.CheckedListBox();
             this.label5 = new System.Windows.Forms.Label();
+			this.checkCrop = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numThreshold)).BeginInit();
@@ -443,7 +444,19 @@ namespace Ekona.Images
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 26);
             this.label5.TabIndex = 50;
-            this.label5.Text = "Check the OAMs\r\nto work with.";
+            this.label5.Text = "Check the OAMs\r\nto work with.";			
+            // 
+            // checkCrop
+            // 
+            this.checkCrop.AutoSize = true;
+            this.checkCrop.Location = new System.Drawing.Point(469, 545);
+            this.checkCrop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkCrop.Name = "checkCrop";
+            this.checkCrop.Size = new System.Drawing.Size(56, 21);
+            this.checkCrop.TabIndex = 7;
+            this.checkCrop.Text = "S1A";
+            this.checkCrop.UseVisualStyleBackColor = true;
+            this.checkCrop.CheckedChanged += new System.EventHandler(this.check_CheckedChanged);
             // 
             // SpriteControl
             // 
@@ -453,6 +466,7 @@ namespace Ekona.Images
             this.Controls.Add(this.label5);
             this.Controls.Add(this.checkListOAM);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.checkCrop);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtBatch);
@@ -518,5 +532,6 @@ namespace Ekona.Images
         private System.Windows.Forms.CheckedListBox checkListOAM;
         private System.Windows.Forms.CheckBox checkSelectOAM;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox checkCrop;
     }
 }
