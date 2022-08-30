@@ -251,9 +251,13 @@ namespace Ekona.Images
                 Actions.Indexed_Image((Bitmap)Image.FromFile(o.FileName), palette.Depth, out tiles, out newcol);
                 newpal = new RawPalette(newcol, palette.CanEdit, palette.Depth);
             }
-            
+
             if (newpal != null)
-                palette.Set_Palette(newpal);
+            {
+                PaletteBase combinedpal = palette;
+                combinedpal.Palette[(int)numericPalette.Value] = newpal.Palette[0];
+                palette.Set_Palette(combinedpal);
+            }
 
             // Write the file
             Write_File();
